@@ -59,13 +59,13 @@ function snakeInitialize() {
     snake = [];
     snakeLength = 5;
     snakeSize = 20;
-    snakeDirection = "up";
+    snakeDirection = "right";
     for(var index = snakeLength - 1; index >= 0 ; index--) {
         snake.push( {
             x: index,
             y: 0
         });
-        }
+    }
 }
 function snakeDraw() {
     for(var index = 0; index < snake.length; index++) {
@@ -78,6 +78,8 @@ function snakeUpdate() {
     var snakeHeadX = snake[0].x;
     var snakeHeadY = snake[0].y;
     
+    snakeHeadX++;
+    console.log(snakeDirection);
     if(snakeDirection == "down") {
         snakeHeadY++;
     }
@@ -124,6 +126,17 @@ function setFoodPosition() {
     food.x = randomX;
     food.y = randomY;
 }
+
+/*-----------------------------------------------------------------------------
+ * Input Functions
+ ------------------------------------------------------------------------------*/
+function keyBoardHandler(event) {
+    console.log(event);
+    if(event.keyCode == "39") {
+    snakeDirection = "right";
+    }
+}
+
 
     
 
