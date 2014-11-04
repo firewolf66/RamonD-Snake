@@ -1,11 +1,20 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: red;
 }
 
 #game-screen{
-    display: block;
+    width:1100px;
+    height:550px;
+    padding-left: 135px;
+    padding-top: 20px;
 }
-
+a{
+    font-size: 26px;
+    padding:175px;
+    color:whitesmoke;
+    text-decoration: wavy;
+}
 
 

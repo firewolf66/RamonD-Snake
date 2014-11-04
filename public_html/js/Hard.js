@@ -23,7 +23,7 @@ var gameOverMenu;
 gameInitialize();
 snakeInitialize();
 foodInitialize();
-setInterval(gameLoop, 1000 / 10);
+setInterval(gameLoop, 1000 / 40);
 
 /* ------------------------------------------------------------------------------------------------------------------------------------
  * Game Functions|Functions for the ineer window.
@@ -218,8 +218,3 @@ function showMenu(state) {
         displayMenu(gameOverMenu);
     }
 }
-
-
-
-
-
